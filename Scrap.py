@@ -12,8 +12,13 @@ prices = driver.find_elements_by_class_name('claroperupoc-claro-general-apps-0-x
 
 
 
-
-
 for price in prices:
+    print((price).text)
+
+for model in models:
+    print((model).text)
+
+'''for price in prices:
     for model in models:
         print((model, price).text)
+'''
