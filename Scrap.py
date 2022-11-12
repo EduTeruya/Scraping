@@ -21,14 +21,13 @@ for price in prices:
 
 
 # Pandas
-modelos_df = pd.DataFrame({'modelos':modelos})
-precios_df = pd.DataFrame({'precios':precios})
+modelos_df = pd.DataFrame({'modelos':Modelos})
+precios_df = pd.DataFrame({'precios':Precios})
 
 # unir los 2 frames en 1
 frames = [modelos_df, precios_df]
 result = pd.concat((frames), axis=1, join='inner')
 print(result)
-
 
 
 # for price in prices:
