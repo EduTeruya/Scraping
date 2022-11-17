@@ -8,8 +8,9 @@ driver.get('https://miportal.entel.pe/personas/catalogo/liberados')
 
 time.sleep(15)
 
-models = driver.find_elements_by_class_name("new-sku-name p-name")
-prices = driver.find_elements_by_class_name("entel-thumbnail-phone-card-new-detail__phone-initialfee offer-price")
+models = driver.find_elements_by_tag_name('p')
+prices = driver.find_elements_by_tag_name('span')
+
 
 time.sleep(15)
 

@@ -30,12 +30,3 @@ precios_df = pd.DataFrame({'Precios':precios})
 frames = [modelos_df, precios_df]
 result = pd.concat((frames), axis=1, join='inner')
 print(result)
-
-
-# for price in prices:
-#     for model in models:
-#         print((model).text, (price).text)
-
-
-        
-        
